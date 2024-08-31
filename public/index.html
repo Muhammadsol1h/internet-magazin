@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <!-- =============================================================================================== -->
+    <!-- =============================================================================================== -->
+
+
+    <header class="bg-[#121214] sm:mb-[40px] mb-[20px]">
+        <div class="mx-auto py-[33px] px-5 max-w-[1402px] flex items-center justify-center sm:justify-between">
+            <div class=" items-center sm:gap-5 gap-0 flex">
+                <button class="border border-none bg-none flex sm:hidden px-5" id="menu">
+                    <img src="./image/index/header/menu.svg" class="flex" alt="">
+                </button>
+                <a href="" class="sm:hidden flex hover:scale-[1.2] pl-5 pr-7" style="transition: .3s;"><img
+                        src="./image/index/header/search.svg" alt="" class="flex"></a>
+                <a href="./index.html" class="flex hover:scale-[1.1] w-[83px] h-[34px] xl:w-[68px] xl:h-[27px]"
+                    style="transition: .3s;">
+                    <img src="./image/index/header/logo.svg" alt="" class="flex">
+                </a>
+                <button class="border border-none bg-none hidden sm:flex xl:hidden " id="menu">
+                    <img src="./image/index/header/menu.svg" class="flex" alt="">
+                </button>
+            </div>
+            <ul class="hidden xl:flex sm:gap-12 gap-5">
+                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a href="./Entrance.html"
+                        class="font-semibold text-white text-sm leading-4 ">Одежда</a><img
+                        src="./image/index/header/button.svg" alt="" class="flex"></li>
+                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a href="./Change.html"
+                        class="font-semibold text-white text-sm leading-4 ">Обувь</a><img
+                        src="./image/index/header/button.svg" alt="" class="flex"></li>
+                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a href="./dashboard.html"
+                        class="font-semibold text-white text-sm leading-4 ">Аксессуары</a><img
+                        src="./image/index/header/button.svg" alt="" class="flex"></li>
+                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a href="./order_History.html"
+                        class="font-semibold text-white text-sm leading-4 ">Бренды</a><img
+                        src="./image/index/header/button.svg" alt="" class="flex"></li>
+                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a href="./wishlist.html"
+                        class="font-semibold text-white text-sm leading-4 ">Расчет
+                        стоимости</a><img src="./image/index/header/button.svg" alt="" class="flex"></li>
+                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a href="./my_addresses.html"
+                        class="font-semibold text-white text-sm leading-4 ">Информация</a><img
+                        src="./image/index/header/button.svg" alt="" class="flex"></li>
+            </ul>
+            <div class="flex items-center xl:gap-[7px]">
+                <ul class="flex items-center xl:gap-8 gap-7">
+                    <li class=""><a href="" class="sm:flex hidden hover:scale-[1.2]" style="transition: .3s;"><img
+                                src="./image/index/header/search.svg" alt="" class="flex"></a></li>
+                    <li class=""><a href="" class="flex hover:scale-[1.2]" style="transition: .3s;"><img
+                                src="./image/index/header/start.svg" alt="" class="flex"></a></li>
+                    <li class=""><a href="" class="flex hover:scale-[1.2]" style="transition: .3s;"><img
+                                src="./image/index/header/contact.svg" alt="" class="flex"></a></li>
+                    <li class=""><a href="" class="flex hover:scale-[1.2]" style="transition: .3s;"><img
+                                src="./image/index/header/shoping.svg" alt="" class="flex"></a></li>
+                </ul>
+                <p class="font-bold text-[13px] text-[#8C8F96] leading-[10px] hover:scale-[1.2] hidden sm:flex"
+                    style="transition: .3s;">11 899 ₽</p>
+                <button
+                    class="font-bold text-xs leading-[53px] text-white bg-[#49D0FF] border border-none rounded-full w-6 h-6 text-center items-center hidden justify-center hover:scale-[1.2] sm:flex"
+                    style="transition: .3s;">7</button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- =============================================================================================== -->
+    <!-- =============================================================================================== -->
+
+
+    <section class="mb-20">
+        <div class="mx-auto px-5 max-w-[1580px] bg-banner"
+            style="background: url(/public/image/index/hero/banner.png);background-position: center; background-repeat: no-repeat; background-size: cover;">
+            <div class="ml-auto pt-[98px] pb-[46px]">
+                <h1
+                    class="font-black xl:text-[51px] sm:text-lg text-[34px] xl:leading-[53px] leading-[43px] text-[#171819] mb-[19px] xl:max-w-[200px] max-w-[100px]">
+                    Широкий
+                    ассортимент Одежды</h1>
+                <p
+                    class="font-normal xl:text-xl sm:text-xs text-sm leading-8 text-[#121214] mb-[19px] xl:max-w-[450px] max-w-[250px]">
+                    Одежда от известные
+                    брендов у нас в каталоге. Только качественные вещи.</p>
+                <a href="./cost_calculation.html"
+                    class="font-extrabold sm:text-xs text-[10px] leading-5 text-white flex items-center gap-[23px] bg-[#121214] border rounded-[5px] border-none sm:py-[23px] sm:pl-[27px] sm:pr-[28px] sm:w-[205px] py-5 pl-5 pr-5 w-[170px] xl:mb-[63px] mb-[19px]">Перейти
+                    в каталоге <img src="./image/index/hero/right.svg" class="flex" alt=""> </a>
+                <div class="flex gap-[15px] items-center">
+                    <button
+                        class="w-[54px] h-[54px] bg-white border border-none rounded-full text-center justify-center items-center flex">
+                        <img src="./image/index/hero/btn__left.svg" class="flex" alt="">
+                    </button>
+                    <button
+                        class="w-[54px] h-[54px] bg-white border border-none rounded-full text-center justify-center items-center flex">
+                        <img src="./image/index/hero/btn__right.svg" class="flex" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =============================================================================================== -->
+    <!-- =============================================================================================== -->
+
+
+    <section class="mb-20">
+        <div class="mx-auto px-5 max-w-[1400px]">
+            <div class="flex justify-between items-center mb-9">
+                <h2 class="font-black text-[#121214] text-3xl leading-10">Обувь</h2>
+                <a href="./Input.html" class="font-extrabold text-sm leading-6 flex items-center gap-[10px]">больше товаров <img
+                        src="./image/index/hero/btn__right.svg" class="flex" alt=""></a>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/Shoes/nike.svg" alt="" class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2
+                            class="font-bold sm:text-[19px] text-sm max-w-[140px] sm:max-w-[240px] leading-7 text-black ">
+                            Nike Court Zoom Cage 2</h2>
+                        <p class="font-normal sm:text-xl text-xs leading-5 text-[#3C3C3C]">от 4 699 ₽</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/Shoes/Air Force 1 Ultra.png" alt=""
+                                class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2 class="font-bold text-[19px] leading-7 text-black">Air Force 1 Ultra</h2>
+                        <p class="font-normal text-xl leading-5 text-[#3C3C3C]">от 6 789 ₽</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/Shoes/Air Force 1 Ultra Flyknit.png" alt=""
+                                class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2 class="font-bold text-[19px] leading-7 text-black">Air Force 1 Ultra Flyknit</h2>
+                        <p class="font-normal text-xl leading-5 text-[#3C3C3C]">от 3 129 ₽</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/Shoes/Men’s Soccer Shoes.png" alt=""
+                                class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2 class="font-bold text-[19px] leading-7 text-black">Men’s Soccer Shoes</h2>
+                        <p class="font-normal text-xl leading-5 text-[#3C3C3C]">от 2 699 ₽</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/Shoes/nike.svg" alt="" class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2 class="font-bold text-[19px] leading-7 text-black">Nike Court Zoom Cage 2</h2>
+                        <p class="font-normal text-xl leading-5 text-[#3C3C3C]">от 4 699 ₽</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/Shoes/Air Force 1 Ultra.png" alt=""
+                                class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2 class="font-bold text-[19px] leading-7 text-black">Air Force 1 Ultra</h2>
+                        <p class="font-normal text-xl leading-5 text-[#3C3C3C]">от 6 789 ₽</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/Shoes/Air Force 1 Ultra Flyknit.png" alt=""
+                                class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2 class="font-bold text-[19px] leading-7 text-black">Air Force 1 Ultra Flyknit</h2>
+                        <p class="font-normal text-xl leading-5 text-[#3C3C3C]">от 3 129 ₽</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/Shoes/Men’s Soccer Shoes.png" alt=""
+                                class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2 class="font-bold text-[19px] leading-7 text-black">Men’s Soccer Shoes</h2>
+                        <p class="font-normal text-xl leading-5 text-[#3C3C3C]">от 2 699 ₽</p>
+                    </div>
+                </div>
+                <div class="mx-auto justify-center flex pt-8">
+                    <div class="pt-[20px] mx-auto justify-center items-center text-center flex gap-[200px]">
+                        <div class="">
+                            <button class="button-prev1 relative z-50">
+                                <img src="./image/index/hero/btn__left.svg" alt="" class="flex ">
+                            </button>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="">
+                            <button class="button-next1 relative z-50">
+                                <img src="./image/index/hero/btn__right.svg" alt="" class="flex ">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mx-auto px-5 max-w-[1400px] pt-20">
+            <div class="flex justify-between items-center mb-9">
+                <h2 class="font-black text-[#121214] text-3xl leading-10">Одежда</h2>
+                <a href="./Input.html" class="font-extrabold text-sm leading-6 flex items-center gap-[10px]">больше товаров <img
+                        src="./image/index/hero/btn__right.svg" class="flex" alt=""></a>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/Shoes/blue.png" alt="" class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2
+                            class="font-bold sm:text-[19px] text-sm max-w-[140px] sm:max-w-[240px] leading-7 text-black ">
+                            Nike Court Zoom Cage 2</h2>
+                        <p class="font-normal sm:text-xl text-xs leading-5 text-[#3C3C3C]">от 4 699 ₽</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/Shoes/yellow.png" alt="" class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2 class="font-bold text-[19px] leading-7 text-black">Air Force 1 Ultra</h2>
+                        <p class="font-normal text-xl leading-5 text-[#3C3C3C]">от 6 789 ₽</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/Shoes/box.png" alt="" class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2 class="font-bold text-[19px] leading-7 text-black">Air Force 1 Ultra Flyknit</h2>
+                        <p class="font-normal text-xl leading-5 text-[#3C3C3C]">от 3 129 ₽</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/Shoes/bluue.png" alt="" class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2 class="font-bold text-[19px] leading-7 text-black">Men’s Soccer Shoes</h2>
+                        <p class="font-normal text-xl leading-5 text-[#3C3C3C]">от 2 699 ₽</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/Shoes/nike.svg" alt="" class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2 class="font-bold text-[19px] leading-7 text-black">Nike Court Zoom Cage 2</h2>
+                        <p class="font-normal text-xl leading-5 text-[#3C3C3C]">от 4 699 ₽</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/Shoes/Air Force 1 Ultra.png" alt=""
+                                class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2 class="font-bold text-[19px] leading-7 text-black">Air Force 1 Ultra</h2>
+                        <p class="font-normal text-xl leading-5 text-[#3C3C3C]">от 6 789 ₽</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/Shoes/Air Force 1 Ultra Flyknit.png" alt=""
+                                class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2 class="font-bold text-[19px] leading-7 text-black">Air Force 1 Ultra Flyknit</h2>
+                        <p class="font-normal text-xl leading-5 text-[#3C3C3C]">от 3 129 ₽</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/Shoes/Men’s Soccer Shoes.png" alt=""
+                                class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2 class="font-bold text-[19px] leading-7 text-black">Men’s Soccer Shoes</h2>
+                        <p class="font-normal text-xl leading-5 text-[#3C3C3C]">от 2 699 ₽</p>
+                    </div>
+                </div>
+                <div class="mx-auto justify-center flex pt-8">
+                    <div class="pt-[20px] mx-auto justify-center items-center text-center flex gap-[200px]">
+                        <div class="">
+                            <button class="button-prev1 relative z-50">
+                                <img src="./image/index/hero/btn__left.svg" alt="" class="flex ">
+                            </button>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="">
+                            <button class="button-next1 relative z-50">
+                                <img src="./image/index/hero/btn__right.svg" alt="" class="flex ">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mx-auto px-5 max-w-[1400px] pt-20">
+            <div class="flex justify-between items-center mb-9">
+                <h2 class="font-black text-[#121214] text-3xl leading-10">Одежда</h2>
+                <a href="./Input.html" class="font-extrabold text-sm leading-6 flex items-center gap-[10px]">больше товаров <img
+                        src="./image/index/hero/btn__right.svg" class="flex" alt=""></a>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/Shoes/obey.png" alt="" class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2
+                            class="font-bold sm:text-[19px] text-sm max-w-[140px] sm:max-w-[240px] leading-7 text-black ">
+                            Nike Court Zoom Cage 2</h2>
+                        <p class="font-normal sm:text-xl text-xs leading-5 text-[#3C3C3C]">от 4 699 ₽</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/Shoes/palace.png" alt="" class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2 class="font-bold text-[19px] leading-7 text-black">Air Force 1 Ultra</h2>
+                        <p class="font-normal text-xl leading-5 text-[#3C3C3C]">от 6 789 ₽</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/Shoes/supereme.png" alt="" class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2 class="font-bold text-[19px] leading-7 text-black">Air Force 1 Ultra Flyknit</h2>
+                        <p class="font-normal text-xl leading-5 text-[#3C3C3C]">от 3 129 ₽</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/Shoes/face.png" alt="" class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2 class="font-bold text-[19px] leading-7 text-black">Men’s Soccer Shoes</h2>
+                        <p class="font-normal text-xl leading-5 text-[#3C3C3C]">от 2 699 ₽</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/Shoes/nike.svg" alt="" class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2 class="font-bold text-[19px] leading-7 text-black">Nike Court Zoom Cage 2</h2>
+                        <p class="font-normal text-xl leading-5 text-[#3C3C3C]">от 4 699 ₽</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/Shoes/Air Force 1 Ultra.png" alt=""
+                                class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2 class="font-bold text-[19px] leading-7 text-black">Air Force 1 Ultra</h2>
+                        <p class="font-normal text-xl leading-5 text-[#3C3C3C]">от 6 789 ₽</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/Shoes/Air Force 1 Ultra Flyknit.png" alt=""
+                                class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2 class="font-bold text-[19px] leading-7 text-black">Air Force 1 Ultra Flyknit</h2>
+                        <p class="font-normal text-xl leading-5 text-[#3C3C3C]">от 3 129 ₽</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/Shoes/Men’s Soccer Shoes.png" alt=""
+                                class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2 class="font-bold text-[19px] leading-7 text-black">Men’s Soccer Shoes</h2>
+                        <p class="font-normal text-xl leading-5 text-[#3C3C3C]">от 2 699 ₽</p>
+                    </div>
+                </div>
+                <div class="mx-auto justify-center flex pt-8">
+                    <div class="pt-[20px] mx-auto justify-center items-center text-center flex gap-[200px]">
+                        <div class="">
+                            <button class="button-prev1 relative z-50">
+                                <img src="./image/index/hero/btn__left.svg" alt="" class="flex ">
+                            </button>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="">
+                            <button class="button-next1 relative z-50">
+                                <img src="./image/index/hero/btn__right.svg" alt="" class="flex ">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =============================================================================================== -->
+    <!-- =============================================================================================== -->
+
+
+    <!-- =============================================================================================== -->
+    <!-- =============================================================================================== -->
+
+
+    <section class="mb-[100px] z-50 relative">
+        <div class="sm:mx-auto mx-auto sm:px-5 px-0 sm:max-w-[1580px] max-w-[360px]"
+            style="background: linear-gradient(267.03deg, #0D99F8 0.94%, #21A0F8 5.36%, #54B5FF 27.35%, #0DBBF8 79%, #0DDBF8 97.53%);">
+            <div class="flex justify-between mx-auto sm:mx-0">
+                <div class="mx-auto pt-[98px]">
+                    <h2 class="font-extrabold text-[51px] leading-[63px] text-white mb-[19px] sm:text-left text-center">
+                        Рассчитать<br> стоимость</h2>
+                    <p class="font-bold text-lg leading-8 text-white max-w-[738px] mb-6 sm:text-left text-center">Если
+                        вам не удалось найти то, что
+                        искали, вы всегда можете воспользоваться автоматическим
+                        расчетом стоимость заказа на маркетплейсе Poizon, включая комиссию сервиса и доставку.</p>
+                    <div class="sm:flex block items-center justify-center text-left gap-[50px] pt-6 mb-[20px] mx-auto">
+                        <div class="flex gap-5 mx-auto justify-center sm:mb-0 mb-[23px] items-center">
+                            <span
+                                class="border border-[#FFFFFF75] rounded-full text-white font-bold text-2xl text-center justify-center items-center py-[22px] px-[32px]">1</span>
+                            <p class="font-semibold text-base leading-[22px] text-white max-w-[258px]">Подробная,
+                                пошаговая
+                                <Br>
+                                статья о том, как установить <Br> приложение Poizon
+                            </p>
+                        </div>
+                        <div class="flex gap-5 items-center justify-center">
+                            <span
+                                class="border border-[#FFFFFF75] rounded-full text-white font-bold text-2xl text-center justify-center items-center py-[22px] px-[32px]">2</span>
+                            <p class="font-semibold text-base leading-[22px] text-white max-w-[258px]">Напишите нам в
+                                Telegram<br>
+                                или WhatsApp какую вещь<br> хотите купить</p>
+                        </div>
+                    </div>
+                    <button
+                        class="flex items-center gap-[21px] font-extrabold text-xs leading-5 text-white border rounded-[5px] border-none bg-[#121214] py-[23px] px-[27px] sm:mb-0 mb-[36px] sm:mx-0 mx-auto">Рассчитать
+                        стоимость <img src="./image/index/hero/right.svg" class="flex" alt=""></button>
+                </div>
+                <img src="./image/index/Calculate/banner.png" class="sm:flex -mt-[130px] -mb-[80px] hidden" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =============================================================================================== -->
+    <!-- =============================================================================================== -->
+
+
+    <section class="-mt-[450px] mb-20 z-10 relative" style="background: linear-gradient(0deg, #D9D9D9, #D9D9D9),
+    linear-gradient(274.21deg, #BCBFC7 -4.34%, #D5D7DC 46.57%),
+    radial-gradient(44.94% 110.87% at 16.91% 0%, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    ">
+        <div
+            class="mx-auto max-w-[1400px] px-5 pt-[500px] sm:pb-[98px] pb-10 sm:flex block items-center justify-between">
+            <div class="sm:mb-0 mb-[30px]">
+                <h2 class="text-[#121214] font-black text-4xl leading-[48px] mb-[17px]">О интернет-<br> магазине xwear
+                </h2>
+                <p class="font-normal text-base leading-[30px] text-[#303030] sm:mb-0 mb-[10px]">Команда XWEAR
+                    предоставляет услугу
+                    доставки только оригинальных товаров c <br> крупнейшего китайского
+                    маркетплейса Poizon, чтобы наши клиенты экономили более 40% <Br> на каждой покупке.<br><br>
+                    Работаем без посредников, благодаря чему можем предоставлять лучшую цену. Быстрая,<Br> бесплатная
+                    доставка.<br><br>
+                    Сайт, на котором можно будет удобно оформить покупку, не скачивая китайское мобильное <Br>
+                    приложение Poizon,
+                    с удобной фильтрацией огромного количества товаров, а так же с <Br> возможностью сразу увидеть
+                    окончательную
+                    цену товара.</p>
+            </div>
+            <div class="bg-white">
+                <div class="pt-10 pl-10 pr-10 pb-10">
+                    <div class="flex mb-10 sm:gap-[10px] gap-6">
+                        <img src="./image/index/xwear/cub.svg" class="flex sm:w-[51px] sm:h-[51px] w-[44px] h-[44px] "
+                            alt="">
+                        <div>
+                            <h2 class="font-black mb-1 text-xs leading-[22px] ">Бесплатная доставка <Br> до России</h2>
+                            <p class="text-sm font-normal leading-5 text-[#303030]">Доставим вам заказ <br>
+                                бесплатно до России</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-10 sm:gap-[10px] gap-6">
+                        <img src="./image/index/xwear/contacts.svg"
+                            class="flex sm:w-[51px] sm:h-[51px] w-[44px] h-[44px] " alt="">
+                        <div>
+                            <h2 class="font-black mb-1 text-xs leading-[22px] ">мы Работаем без<Br> посредников</h2>
+                            <p class="text-sm font-normal leading-5 text-[#303030]">Между нами и клиентом нет<br>
+                                третьего лишнего</p>
+                        </div>
+                    </div>
+                    <div class="flex sm:gap-[10px] gap-6">
+                        <img src="./image/index/xwear/box.svg" class="flex sm:w-[51px] sm:h-[51px] w-[44px] h-[44px] "
+                            alt="">
+                        <div>
+                            <h2 class="font-black mb-1 text-xs leading-[22px] ">простота в заказе и<Br> использовании
+                            </h2>
+                            <p class="text-sm font-normal leading-5 text-[#303030]">Для заказа с Poizon не нужно <br>
+                                никаких приложений</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="https://t.me/mukhammadsol1h" class="bg-[#121214] border border-none rounded-full hidden sm:flex ">
+                <img src="./image/index/xwear/chat.svg" class="flex pt-6 pb-6 pl-6 pr-6" alt="">
+            </a>
+        </div>
+    </section>
+
+
+    <!-- =============================================================================================== -->
+    <!-- =============================================================================================== -->
+
+
+    <section class="mb-[118px]">
+        <div class="mx-auto px-5 max-w-[1400px] ">
+            <div class="flex justify-between items-center mb-9">
+                <h2 class="font-black text-[#121214] text-3xl leading-10">Наш блог</h2>
+                <a href="https://t.me/mukhammadsol1h" class="font-extrabold text-sm leading-6 flex items-center gap-[10px]">больше статей <img
+                        src="./image/index/hero/btn__right.svg" class="flex" alt=""></a>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/our/Rectangle 49.png" alt=""
+                                class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2
+                            class="font-bold sm:text-[19px] text-sm max-w-[140px] sm:max-w-[240px] leading-7 text-black ">
+                            Nike Court Zoom Cage 2</h2>
+                        <p class="font-normal sm:text-xl text-xs leading-5 text-[#3C3C3C]">от 4 699 ₽</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/our/Rectangle.png" alt="" class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2 class="font-bold text-[19px] leading-7 text-black">Air Force 1 Ultra</h2>
+                        <p class="font-normal text-xl leading-5 text-[#3C3C3C]">от 6 789 ₽</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/our/Group 38.png" alt="" class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2 class="font-bold text-[19px] leading-7 text-black">Air Force 1 Ultra Flyknit</h2>
+                        <p class="font-normal text-xl leading-5 text-[#3C3C3C]">от 3 129 ₽</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/our/Group 38.png" alt="" class="flex z-10 sm:w-[318px] w-[160px]">
+                        </div>
+                        <h2 class="font-bold text-[19px] leading-7 text-black">Men’s Soccer Shoes</h2>
+                        <p class="font-normal text-xl leading-5 text-[#3C3C3C]">от 2 699 ₽</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/Shoes/nike.svg" alt="" class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2 class="font-bold text-[19px] leading-7 text-black">Nike Court Zoom Cage 2</h2>
+                        <p class="font-normal text-xl leading-5 text-[#3C3C3C]">от 4 699 ₽</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/Shoes/Air Force 1 Ultra.png" alt=""
+                                class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2 class="font-bold text-[19px] leading-7 text-black">Air Force 1 Ultra</h2>
+                        <p class="font-normal text-xl leading-5 text-[#3C3C3C]">от 6 789 ₽</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/Shoes/Air Force 1 Ultra Flyknit.png" alt=""
+                                class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2 class="font-bold text-[19px] leading-7 text-black">Air Force 1 Ultra Flyknit</h2>
+                        <p class="font-normal text-xl leading-5 text-[#3C3C3C]">от 3 129 ₽</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <img src="./image/index/Shoes/Men’s Soccer Shoes.png" alt=""
+                                class="flex z-10 sm:w-[318px] w-[160px]">
+                            <img src="./image/index/Shoes/start.svg" alt="" class="flex z-50 -ml-11 -mt-48">
+                        </div>
+                        <h2 class="font-bold text-[19px] leading-7 text-black">Men’s Soccer Shoes</h2>
+                        <p class="font-normal text-xl leading-5 text-[#3C3C3C]">от 2 699 ₽</p>
+                    </div>
+                </div>
+                <div class="mx-auto justify-center flex">
+                    <div class="mx-auto justify-center items-center text-center flex gap-[200px]">
+                        <div class="">
+                            <button class="button-prev1 relative z-50">
+                                <img src="./image/index/hero/btn__left.svg" alt="" class="flex ">
+                            </button>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="">
+                            <button class="button-next1 relative z-50">
+                                <img src="./image/index/hero/btn__right.svg" alt="" class="flex ">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =============================================================================================== -->
+    <!-- =============================================================================================== -->
+
+
+    <footer class="bg-[#121214]">
+        <div class="mx-auto max-w-[1406px] px-5 sm:flex hidden justify-between">
+            <div class="pt-[45px] pb-[51px]">
+                <h2 class="font-black text-white text-base leading-[28px] mb-[10px] ">Каталог</h2>
+                <ul class="mb-[58px]">
+                    <li class="mb-[9px]"><a href="./addresses.html"
+                            class="font-normal leading-[28px] text-base text-[#DCDCE0] opacity-[40%]">Одежда</a></li>
+                    <li class="mb-[9px]"><a href="./editing_profile.html"
+                            class="font-normal leading-[28px] text-base text-[#DCDCE0] opacity-[40%]">Обувь</a></li>
+                    <li class="mb-[9px]"><a href="./Cart.html"
+                            class="font-normal leading-[28px] text-base text-[#DCDCE0] opacity-[40%]">Аксессуары</a>
+                    </li>
+                    <li class=""><a href="./cost_calculation.html"
+                            class="font-normal text-base leading-[28px] text-[#DCDCE0] opacity-[40%]">Расчет
+                            стоимости</a></li>
+                </ul>
+                <img src="./image/index/footer/logo.svg" class="flex" alt="">
+            </div>
+            <div class="pt-[45px] pb-[51px]">
+                <h2 class="font-black text-white text-base leading-[28px] mb-[10px]">Информация</h2>
+                <ul class="mb-[38px]">
+                    <li class="mb-[9px]"><a href="./order_History.html"
+                            class="font-normal leading-[28px] text-base text-[#DCDCE0] opacity-[40%]">Блог</a>
+                    </li>
+                    <li class="mb-[9px]"><a href="./contak.html"
+                            class="font-normal leading-[28px] text-base text-[#DCDCE0] opacity-[40%]">Контакты</a></li>
+                    <li class="mb-[9px]"><a href="./editing_profile.html"
+                            class="font-normal leading-[28px] text-base text-[#DCDCE0] opacity-[40%]">Доставка</a></li>
+                    <li class=""><a href="./Password_two.html" class="font-normal text-base leading-[28px] text-[#DCDCE0] opacity-[40%]">
+                            Оплата</a></li>
+                    <li class=""><a href="./product_card.html" class="font-normal text-base leading-[28px] text-[#DCDCE0] opacity-[40%]">
+                            FAQ</a></li>
+                </ul>
+                <img src="./image/index/footer/readycode_logo_3 1.svg" class="flex" alt="">
+            </div>
+            <div class="pt-[45px] pb-[51px]">
+                <h2 class="font-black text-white text-base leading-[28px] mb-[10px]">Контакты</h2>
+                <ul class="mb-[6px]">
+                    <li class="mb-[9px]"><a href="gmail:info@xwear.info"
+                            class="font-normal leading-[28px] text-base text-[#DCDCE0] opacity-[40%]">info@xwear.info</a>
+                    </li>
+                    <li class="mb-[9px]"><a href="number:+7 993 608 38 85"
+                            class="font-normal leading-[28px] text-base text-[#DCDCE0]">+7 993 608 38 85</a></li>
+                    <li class="mb-[9px]"><a href="https://t.me/mukhammadsol1h"
+                            class="font-normal leading-[28px] text-base text-[#DCDCE0]">Мессенджеры</a></li>
+                    <div class="flex gap-2 pt-1 pb-2">
+                        <img src="./image/index/footer/telegram.svg" class="flex" alt="">
+                        <img src="./image/index/footer/what app.svg" class="flex" alt="">
+                    </div>
+                    <li class=""><a href="" class="font-normal text-base leading-[28px] text-[#DCDCE0]"> Наши
+                            соц.сети</a></li>
+                </ul>
+                <img src="./image/index/footer/weka.svg" class="flex" alt="">
+            </div>
+            <div class="pt-[45px] pb-[51px]">
+                <h2 class="font-black text-white text-base leading-[28px] mb-[10px] opacity-[40%]">Подписка на новости
+                </h2>
+                <ul class="mb-[6px]">
+                    <li class="mb-[9px]"><a href="./Change.html"
+                            class="font-normal leading-[28px] text-base text-[#DCDCE0] opacity-[40%]">Будьте в курсе
+                            скидок и новостей</a>
+                    </li>
+                    <div class="flex items-center gap-[172px] pt-[10px] pb-2">
+                        <p class="font-normal text-sm leading-7 text-white opacity-[40%]">Ваш email</p>
+                        <button
+                            class="w-[29px] h-[29px] bg-white justify-center items-center text-center border rounded-full border-none flex">
+                            <img src="./image/index/hero/btn__right.svg" alt="" class="flex">
+                        </button>
+                    </div>
+                    <div class="w-[268px] h-[1px] bg-white opacity-[40%]"></div>
+                    <p class="font-normal text-xs leading-[18px] pt-[15px] pb-[30px] text-white opacity-[40%]">
+                        Подписываясь на рассылку вы<br> соглашатесь с обработкой персональных<br> данных
+                    </p>
+                    <a href="#" class="font-semibold text-[11px] leading-[18px] text-white opacity-[40%]">
+                        Политика конфиденциальности<Br>
+                        Пользовательское соглашение
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="bg-[#121214] flex sm:hidden">
+        <div class="mx-auto px-5 max-w-[360px]">
+            <div class="mx-auto pt-7 flex justify-center mb-6">
+                <a href="" class="">
+                    <img src="./image/index/footer/logo.svg" class="flex" alt="">
+                </a>
+            </div>
+            <ul class="mb-5">
+                <li class="items-center flex justify-between mb-[10px]"><a href=""
+                        class="font-black text-sm leading-7 text-white">Информация</a><img
+                        src="./image/index/footer/button.svg" class="flex" alt=""></li>
+                <div class="w-[360px] h-[1px] border border-none bg-[#FFFFFF14] opacity-[40%]"></div>
+                <li class="items-center flex pt-[10px] justify-between mb-[10px]"><a href=""
+                        class="font-black text-sm leading-7  text-white">Каталог</a><img
+                        src="./image/index/footer/button.svg" class="flex" alt=""></li>
+                <div class="w-[360px] h-[1px] border border-none bg-[#FFFFFF14] opacity-[40%]"></div>
+                <li class="items-center flex pt-[10px] justify-between mb-[10px]"><a href=""
+                        class="font-black text-sm leading-7 text-white">Контакты</a><img
+                        src="./image/index/footer/button.svg" class="flex" alt=""></li>
+                <div class="w-[360px] h-[1px] border border-none bg-[#FFFFFF14] opacity-[40%]"></div>
+            </ul>
+            <div class="flex items-center gap-[10px] justify-center mb-5">
+                <a href="" class="flex">
+                    <img src="./image/index/footer/telegram.svg" alt="" class="flex">
+                </a>
+                <a href="" class="flex">
+                    <img src="./image/index/footer/what app.svg" alt="" class="flex">
+                </a>
+                <a href="" class="flex">
+                    <img src="./image/index/footer/weka.svg" alt="" class="flex">
+                </a>
+            </div>
+            <h2 class="font-black text-[13px] leading-7 text-white mb-[9px] text-center">
+                Подписка на новости
+            </h2>
+            <p class="font-normal text-sm leading-7 text-center text-[#DCDCE0] mb-[9px]">
+                Будьте в курсе скидок и новостей
+            </p>
+            <div class="flex items-center justify-between">
+                <p class="font-normal text-[13px] leading-7 text-white opacity-[40%]">Ваш email</p>
+                <a class="block bg-white border border-none rounded-full">
+                    <img src="./image/index/hero/btn__right.svg" class="pt-[10px] pb-[10px] pl-[12px] pr-[12px]" alt="">
+                </a>
+            </div>
+            <div class="w-[350px] h-[1px] bg-white opacity-[40%] mt-[17px]"></div>
+            <p class="font-normal text-xs leading-[18px] mb-[19px] text-center pt-[15px] text-white opacity-[40%]">
+                Подписываясь на рассылку вы соглашатесь с <br> обработкой персональных данных
+            </p>
+            <a href="" class="font-semibold text-[11px] leading-[18px] text-white opacity-[40%] text-center block mb-[34px]">
+                Политика конфиденциальности<br>
+                Пользовательское соглашение
+            </a>
+            <div class="pb-[34px]">
+                <a href="" class="flex mx-auto justify-center">
+                    <img src="./image/index/footer/readycode_logo_3 1.svg" class="flex" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- =============================================================================================== -->
+    <!-- =============================================================================================== -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./JS/app.js"></script>
+
+
+    <!-- =============================================================================================== -->
+    <!-- =============================================================================================== -->
+</body>
+
+</html>
