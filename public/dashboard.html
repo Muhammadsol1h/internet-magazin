@@ -18,7 +18,7 @@
         <div class="mx-auto py-[33px] px-5 max-w-[1402px] flex items-center justify-center sm:justify-between">
             <div class=" items-center sm:gap-5 gap-0 flex">
                 <button class="border border-none bg-none flex sm:hidden px-5" id="menu">
-                    <img src="./image/index/header/menu.svg" class="flex" alt="">
+                    <img src="./image/index/header/menu.svg" class="flex" id="hamburger-menu" alt="">
                 </button>
                 <a href="" class="sm:hidden flex hover:scale-[1.2] pl-5 pr-7" style="transition: .3s;"><img
                         src="./image/index/header/search.svg" alt="" class="flex"></a>
@@ -26,9 +26,25 @@
                     style="transition: .3s;">
                     <img src="./image/index/header/logo.svg" alt="" class="flex">
                 </a>
-                <button class="border border-none bg-none hidden sm:flex xl:hidden " id="menu">
+                <button class="border border-none bg-none hidden sm:flex xl:hidden " id="">
                     <img src="./image/index/header/menu.svg" class="flex" alt="">
                 </button>
+            </div>
+
+            <div class="bg-black fixed w-full top-0 -left-full" id="responsive-menu">
+                <button class="bg-none border-none pt-[14px] pl-[22px] mb-[36px]" id="close__menu">
+                    <img src="./image/index/header/close.svg" alt="">
+                </button>
+                <ul class="pl-[44px] pb-[100px]">
+                    <li class="mb-[48px]"><a href="./Entrance.html" class="font-bold text-sm leading-4 text-white ">Одежда</a></li>
+                    <li class="mb-[48px]"><a href="./Change.html" class="font-bold text-sm leading-4 text-white ">Обувь</a></li>
+                    <li class="mb-[48px]"><a href="./order_History.html" class="font-bold text-sm leading-4 text-white ">Аксессуары</a></li>
+                    <li class="mb-[48px]"><a href="./my-addresses.html" class="font-bold text-sm leading-4 text-white ">Бренды</a></li>
+                    <li class="mb-[48px]"><a href="./dashboard.html" class="font-bold text-sm leading-4 text-white ">Расчет
+                            стоимости</a></li>
+                    <li class="mb-[48px]"><a href="./product_card.html" class="font-bold text-sm leading-4 text-white ">Информация </a>
+                    </li>
+                </ul>
             </div>
             <ul class="hidden xl:flex sm:gap-12 gap-5">
                 <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a href="./Entrance.html"
@@ -37,16 +53,17 @@
                 <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a href="./Change.html"
                         class="font-semibold text-white text-sm leading-4 ">Обувь</a><img
                         src="./image/index/header/button.svg" alt="" class="flex"></li>
-                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a href="./dashboard.html"
-                        class="font-semibold text-white text-sm leading-4 ">Аксессуары</a><img
+                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a
+                        href="./dashboard.html" class="font-semibold text-white text-sm leading-4 ">Аксессуары</a><img
                         src="./image/index/header/button.svg" alt="" class="flex"></li>
-                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a href="./order_History.html"
-                        class="font-semibold text-white text-sm leading-4 ">Бренды</a><img
+                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a
+                        href="./order_History.html" class="font-semibold text-white text-sm leading-4 ">Бренды</a><img
                         src="./image/index/header/button.svg" alt="" class="flex"></li>
                 <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a href="./wishlist.html"
                         class="font-semibold text-white text-sm leading-4 ">Расчет
                         стоимости</a><img src="./image/index/header/button.svg" alt="" class="flex"></li>
-                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a href="./my_addresses.html"
+                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a
+                        href="./my_addresses.html"
                         class="font-semibold text-white text-sm leading-4 ">Информация</a><img
                         src="./image/index/header/button.svg" alt="" class="flex"></li>
             </ul>

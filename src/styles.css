@@ -2,3 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+.active{
+    background-color: #49D0FF !important;
+}
+.active h3{
+    color: white;
+}
+.active p{
+    color: white;
+}
+.linkactive{
+    opacity: 100;
+}
+
+.textactive{
+    color: #121214;
+    opacity: 100%;
+}

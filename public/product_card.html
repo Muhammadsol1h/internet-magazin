@@ -18,7 +18,7 @@
         <div class="mx-auto py-[33px] px-5 max-w-[1402px] flex items-center justify-center sm:justify-between">
             <div class=" items-center sm:gap-5 gap-0 flex">
                 <button class="border border-none bg-none flex sm:hidden px-5" id="menu">
-                    <img src="./image/index/header/menu.svg" class="flex" alt="">
+                    <img src="./image/index/header/menu.svg" class="flex" id="hamburger-menu" alt="">
                 </button>
                 <a href="" class="sm:hidden flex hover:scale-[1.2] pl-5 pr-7" style="transition: .3s;"><img
                         src="./image/index/header/search.svg" alt="" class="flex"></a>
@@ -26,9 +26,31 @@
                     style="transition: .3s;">
                     <img src="./image/index/header/logo.svg" alt="" class="flex">
                 </a>
-                <button class="border border-none bg-none hidden sm:flex xl:hidden " id="menu">
+                <button class="border border-none bg-none hidden sm:flex xl:hidden " id="">
                     <img src="./image/index/header/menu.svg" class="flex" alt="">
                 </button>
+            </div>
+
+            <div class="bg-black fixed w-full top-0 -left-full" id="responsive-menu">
+                <button class="bg-none border-none pt-[14px] pl-[22px] mb-[36px]" id="close__menu">
+                    <img src="./image/index/header/close.svg" alt="">
+                </button>
+                <ul class="pl-[44px] pb-[100px]">
+                    <li class="mb-[48px]"><a href="./Entrance.html"
+                            class="font-bold text-sm leading-4 text-white ">Одежда</a></li>
+                    <li class="mb-[48px]"><a href="./Change.html"
+                            class="font-bold text-sm leading-4 text-white ">Обувь</a></li>
+                    <li class="mb-[48px]"><a href="./order_History.html"
+                            class="font-bold text-sm leading-4 text-white ">Аксессуары</a></li>
+                    <li class="mb-[48px]"><a href="./my-addresses.html"
+                            class="font-bold text-sm leading-4 text-white ">Бренды</a></li>
+                    <li class="mb-[48px]"><a href="./dashboard.html"
+                            class="font-bold text-sm leading-4 text-white ">Расчет
+                            стоимости</a></li>
+                    <li class="mb-[48px]"><a href="./product_card.html"
+                            class="font-bold text-sm leading-4 text-white ">Информация </a>
+                    </li>
+                </ul>
             </div>
             <ul class="hidden xl:flex sm:gap-12 gap-5">
                 <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a href="./Entrance.html"
@@ -37,16 +59,17 @@
                 <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a href="./Change.html"
                         class="font-semibold text-white text-sm leading-4 ">Обувь</a><img
                         src="./image/index/header/button.svg" alt="" class="flex"></li>
-                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a href="./dashboard.html"
-                        class="font-semibold text-white text-sm leading-4 ">Аксессуары</a><img
+                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a
+                        href="./dashboard.html" class="font-semibold text-white text-sm leading-4 ">Аксессуары</a><img
                         src="./image/index/header/button.svg" alt="" class="flex"></li>
-                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a href="./order_History.html"
-                        class="font-semibold text-white text-sm leading-4 ">Бренды</a><img
+                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a
+                        href="./order_History.html" class="font-semibold text-white text-sm leading-4 ">Бренды</a><img
                         src="./image/index/header/button.svg" alt="" class="flex"></li>
                 <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a href="./wishlist.html"
                         class="font-semibold text-white text-sm leading-4 ">Расчет
                         стоимости</a><img src="./image/index/header/button.svg" alt="" class="flex"></li>
-                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a href="./my_addresses.html"
+                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a
+                        href="./my_addresses.html"
                         class="font-semibold text-white text-sm leading-4 ">Информация</a><img
                         src="./image/index/header/button.svg" alt="" class="flex"></li>
             </ul>
@@ -83,126 +106,153 @@
     <section class="mb-[80px]">
         <div class="max-w-[1400px] mx-auto sm:px-5 px-2">
             <ul class="sm:flex hidden gap-[15px] items-center sm:mb-[66px] mb-[15px]">
-                <li><a href="./index.html" class="font-normal text-[13px] leading-5 text-[#8C8F96] gap-[15px]">Главная / </a></li>
-                <li><a href="./Change.html" class="font-normal text-[13px] leading-5 text-[#8C8F96]">Каталог товаров / </a></li>
-                <li><a href="./editing_profile.html" class="font-normal text-[13px] leading-5 text-[#8C8F96] gap-[15px]">Обувь / </a></li>
-                <li><a href="./single.html" class="font-normal text-[13px] leading-5 text-[#8C8F96]">Кроссовки / </a></li>
-                <li><a href="./my-addresses.html" class="font-normal text-[13px] leading-5 text-[#121214] gap-[15px]"> Nike Court Zoom Cage
+                <li><a href="./index.html" class="font-normal text-[13px] leading-5 text-[#8C8F96] gap-[15px]">Главная /
+                    </a></li>
+                <li><a href="./Change.html" class="font-normal text-[13px] leading-5 text-[#8C8F96]">Каталог товаров /
+                    </a></li>
+                <li><a href="./editing_profile.html"
+                        class="font-normal text-[13px] leading-5 text-[#8C8F96] gap-[15px]">Обувь / </a></li>
+                <li><a href="./single.html" class="font-normal text-[13px] leading-5 text-[#8C8F96]">Кроссовки / </a>
+                </li>
+                <li><a href="./my-addresses.html" class="font-normal text-[13px] leading-5 text-[#121214] gap-[15px]">
+                        Nike Court Zoom Cage
                         2 </a></li>
             </ul>
             <ul class="flex sm:hidden gap-[15px] items-center sm:mb-[66px] mb-[15px]">
-                <li><a href="./index.html" class="font-normal text-[13px] leading-5 text-[#8C8F96] gap-[15px]">Главная / </a></li>
-                <li><a href="./Entrance.html" class="font-normal text-[13px] leading-5 text-[#8C8F96]">Каталог товаров / </a></li>
-                <li><a href="./single.html" class="font-normal text-[13px] leading-5 text-[#121214] gap-[15px]">Обувь / </a></li>
+                <li><a href="./index.html" class="font-normal text-[13px] leading-5 text-[#8C8F96] gap-[15px]">Главная /
+                    </a></li>
+                <li><a href="./Entrance.html" class="font-normal text-[13px] leading-5 text-[#8C8F96]">Каталог товаров /
+                    </a></li>
+                <li><a href="./single.html" class="font-normal text-[13px] leading-5 text-[#121214] gap-[15px]">Обувь /
+                    </a></li>
             </ul>
             <div class="sm:flex block gap-[30px] mb-[110px]">
-                <h2 class="font-black text-[31px] leading-[42px] text-black mb-[13px] flex sm:hidden">Кроссовки Nike Court<Br> Zoom
+                <h2 class="font-black text-[31px] leading-[42px] text-black mb-[13px] flex sm:hidden">Кроссовки Nike
+                    Court<Br> Zoom
                     Cage 2
                 </h2>
                 <div class="">
-                    <img src="./image/product/banner.png" alt="" class="flex">
-                    <div class="flex gap-[25px]">
-                        <img src="./image/product/one.png" alt="" class="flex">
-                        <img src="./image/product/two.png" alt="" class="flex">
-                        <img src="./image/product/uchu.png" alt="" class="flex">
+                    <img src="./image/product/banner.png" alt="" class="flex w-[664px] h-[489px]" id="mega-img">
+                    <div class="flex sm:gap-[25px] gap-[12px]">
+                        <img src="./image/product/one.png" alt="" class="flex w-[110px] h-[120px]" id="child-img">
+                        <img src="./image/product/two.png" alt="" class="flex w-[106px] h-[96px] " id="child-img1">
+                        <img src="./image/product/sri.png" alt="" class="flex w-[106px] h-[96px] " id="child-img2">
                     </div>
                 </div>
                 <div>
 
 
 
-                    <h2 class="font-black text-[31px] leading-[42px] text-black sm:mb-[13px] mb-[31px ] sm:flex hidden">Кроссовки Nike Court<Br> Zoom
+                    <h2 class="font-black text-[31px] leading-[42px] text-black sm:mb-[13px] mb-[31px ] sm:flex hidden">
+                        Кроссовки Nike Court<Br> Zoom
                         Cage 2
                     </h2>
                     <p class="font-semibold text-sm leading-5 text-[#303030] mb-[13px]">
                         EU размеры:
                     </p>
                     <div class="flex sm:gap-[10px] gap-[5px] items-center mb-[13px]">
-                        <div class="border rounded-[5px] border-[#EFEFEF] text-center">
+                        <div class="border rounded-[5px] border-[#EFEFEF] text-center active" id="divbtn">
                             <h3 class="font-semibold text-[15px] leading-4 text-[#000000] mb-[2px] pt-2">36</h3>
-                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2 ">3 699₽</p>
+                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2 ">3
+                                699₽</p>
                         </div>
-                        <div class="border rounded-[5px] border-[#EFEFEF] text-center">
+                        <div class="border rounded-[5px] border-[#EFEFEF] text-center" id="divbtn">
                             <h3 class="font-semibold text-[15px] leading-4 text-[#000000] mb-[2px] pt-2">36,5</h3>
-                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2 ">3 799₽</p>
+                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2 ">3
+                                799₽</p>
                         </div>
-                        <div class="border rounded-[5px] border-[#EFEFEF] text-center">
+                        <div class="border rounded-[5px] border-[#EFEFEF] text-center" id="divbtn">
                             <h3 class="font-semibold text-[15px] leading-4 text-[#000000] mb-[2px] pt-2">37</h3>
-                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2 ">3 899₽</p>
+                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2 ">3
+                                899₽</p>
                         </div>
-                        <div class="border rounded-[5px] border-[#EFEFEF] text-center">
+                        <div class="border rounded-[5px] border-[#EFEFEF] text-center" id="divbtn">
                             <h3 class="font-semibold text-[15px] leading-4 text-[#000000] mb-[2px] pt-2">37,5</h3>
-                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2 ">3 999₽</p>
+                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2 ">3
+                                999₽</p>
                         </div>
-                        <div class="border rounded-[5px] border-[#EFEFEF] text-center">
+                        <div class="border rounded-[5px] border-[#EFEFEF] text-center" id="divbtn">
                             <h3 class="font-semibold text-[15px] leading-4 text-[#000000] mb-[2px] pt-2">38</h3>
-                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2 ">4 099₽</p>
+                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2 ">4
+                                099₽</p>
                         </div>
                     </div>
                     <div class="flex sm:gap-[10px] gap-[5px] items-center mb-[13px]">
-                        <div class="border rounded-[5px] border-[#EFEFEF] text-center">
+                        <div class="border rounded-[5px] border-[#EFEFEF] text-center" id="divbtn">
                             <h3 class="font-semibold text-[14px] leading-4 text-[#000000] mb-[2px] pt-2">38,5</h3>
-                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2">4 129₽</p>
+                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2">4 129₽
+                            </p>
                         </div>
-                        <div class="border rounded-[5px] border-[#EFEFEF] text-center">
+                        <div class="border rounded-[5px] border-[#EFEFEF] text-center" id="divbtn">
                             <h3 class="font-semibold text-[15px] leading-4 text-[#000000] mb-[2px] pt-2">39</h3>
-                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2">4 199₽</p>
+                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2">4 199₽
+                            </p>
                         </div>
-                        <div class="border rounded-[5px] border-[#EFEFEF] text-center">
+                        <div class="border rounded-[5px] border-[#EFEFEF] text-center" id="divbtn">
                             <h3 class="font-semibold text-[15px] leading-4 text-[#000000] mb-[2px] pt-2">39,5</h3>
-                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2">4 299₽</p>
+                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2">4 299₽
+                            </p>
                         </div>
-                        <div class="border rounded-[5px] border-[#EFEFEF] text-center">
+                        <div class="border rounded-[5px] border-[#EFEFEF] text-center" id="divbtn">
                             <h3 class="font-semibold text-[15px] leading-4 text-[#000000] mb-[2px] pt-2">40</h3>
-                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2">4 329₽</p>
+                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2">4 329₽
+                            </p>
                         </div>
-                        <div class="border rounded-[5px] border-[#EFEFEF] text-center">
+                        <div class="border rounded-[5px] border-[#EFEFEF] text-center" id="divbtn">
                             <h3 class="font-semibold text-[15px] leading-4 text-[#000000] mb-[2px] pt-2">40,5</h3>
-                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2">4 499₽</p>
+                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2">4 499₽
+                            </p>
                         </div>
                     </div>
                     <div class="flex sm:gap-[10px] gap-[5px] items-center mb-[13px]">
-                        <div class="border rounded-[5px] border-[#EFEFEF] text-center">
+                        <div class="border rounded-[5px] border-[#EFEFEF] text-center" id="divbtn">
                             <h3 class="font-semibold text-[15px] leading-4 text-[#000000] mb-[2px] pt-2">38,5</h3>
-                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2">4 129₽</p>
+                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2">4 129₽
+                            </p>
                         </div>
-                        <div class="border rounded-[5px] border-[#EFEFEF] text-center">
+                        <div class="border rounded-[5px] border-[#EFEFEF] text-center" id="divbtn">
                             <h3 class="font-semibold text-[15px] leading-4 text-[#000000] mb-[2px] pt-2">39</h3>
-                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2">4 199₽</p>
+                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2">4 199₽
+                            </p>
                         </div>
-                        <div class="border rounded-[5px] border-[#EFEFEF] text-center">
+                        <div class="border rounded-[5px] border-[#EFEFEF] text-center" id="divbtn">
                             <h3 class="font-semibold text-[15px] leading-4 text-[#000000] mb-[2px] pt-2">39,5</h3>
-                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2">4 299₽</p>
+                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2">4 299₽
+                            </p>
                         </div>
-                        <div class="border rounded-[5px] border-[#EFEFEF] text-center">
+                        <div class="border rounded-[5px] border-[#EFEFEF] text-center" id="divbtn">
                             <h3 class="font-semibold text-[15px] leading-4 text-[#000000] mb-[2px] pt-2">40</h3>
-                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2">4 329₽</p>
+                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2">4 329₽
+                            </p>
                         </div>
-                        <div class="border rounded-[5px] border-[#EFEFEF] text-center">
+                        <div class="border rounded-[5px] border-[#EFEFEF] text-center" id="divbtn">
                             <h3 class="font-semibold text-[15px] leading-4 text-[#000000] mb-[2px] pt-2">40,5</h3>
-                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2">4 499₽</p>
+                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2">4 499₽
+                            </p>
                         </div>
                     </div>
                     <div class="flex sm:gap-[10px] gap-[5px] items-center mb-[13px]">
-                        <div class="border rounded-[5px] border-[#EFEFEF] text-center">
+                        <div class="border rounded-[5px] border-[#EFEFEF] text-center" id="divbtn">
                             <h3 class="font-semibold text-[15px] leading-4 text-[#000000] mb-[2px] pt-2">38,5</h3>
-                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2">4 129₽</p>
+                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2">4 129₽
+                            </p>
                         </div>
-                        <div class="border rounded-[5px] border-[#EFEFEF] text-center">
+                        <div class="border rounded-[5px] border-[#EFEFEF] text-center" id="divbtn">
                             <h3 class="font-semibold text-[15px] leading-4 text-[#000000] mb-[2px] pt-2">39</h3>
-                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2">4 199₽</p>
+                            <p class="font-semibold leading-[15px] text-sm text-[#7B7B7B] sm:px-[17px] px-2 pb-2">4 199₽
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="">
                 <ul class="flex items-center gap-[50px] mb-[63px]">
-                    <li class=""><a href="" class="font-bold text-lg leading-5 text-[#20282F]">Детали</a></li>
-                    <li class=""><a href=""
-                            class="font-semibold text-lg leading-5 text-[#20282F] opacity-[40%]">Доставка</a></li>
-                    <li class=""><a href=""
-                            class="font-semibold text-lg leading-5 text-[#20282F] opacity-[40%]">Оплата</a></li>
-                    <li class=""><a href="" class="font-semibold text-lg leading-5 text-[#20282F] opacity-[40%]">FAQ</a>
+                    <li class=""><a href="#" class="font-bold text-lg leading-5 text-[#20282F] linkactive opacity-[40%]" id="linkactive" >Детали</a></li>
+                    <li class=""><a href="#"
+                            class="font-semibold text-lg leading-5 text-[#20282F] opacity-[40%]" id="linkactive" >Доставка</a></li>
+                    <li class=""><a href="#"
+                            class="font-semibold text-lg leading-5 text-[#20282F] opacity-[40%] " id="linkactive" >Оплата</a></li>
+                    <li class=""><a href="#" class="font-semibold text-lg leading-5 text-[#20282F] opacity-[40%] " id="linkactive" >FAQ</a>
                     </li>
                 </ul>
                 <div class="mb-[94px]">
@@ -366,9 +416,11 @@
                             class="font-normal leading-[28px] text-base text-[#DCDCE0] opacity-[40%]">Контакты</a></li>
                     <li class="mb-[9px]"><a href="./editing_profile.html"
                             class="font-normal leading-[28px] text-base text-[#DCDCE0] opacity-[40%]">Доставка</a></li>
-                    <li class=""><a href="./Password_two.html" class="font-normal text-base leading-[28px] text-[#DCDCE0] opacity-[40%]">
+                    <li class=""><a href="./Password_two.html"
+                            class="font-normal text-base leading-[28px] text-[#DCDCE0] opacity-[40%]">
                             Оплата</a></li>
-                    <li class=""><a href="./product_card.html" class="font-normal text-base leading-[28px] text-[#DCDCE0] opacity-[40%]">
+                    <li class=""><a href="./product_card.html"
+                            class="font-normal text-base leading-[28px] text-[#DCDCE0] opacity-[40%]">
                             FAQ</a></li>
                 </ul>
                 <img src="./image/index/footer/readycode_logo_3 1.svg" class="flex" alt="">
@@ -468,7 +520,8 @@
             <p class="font-normal text-xs leading-[18px] mb-[19px] text-center pt-[15px] text-white opacity-[40%]">
                 Подписываясь на рассылку вы соглашатесь с <br> обработкой персональных данных
             </p>
-            <a href="" class="font-semibold text-[11px] leading-[18px] text-white opacity-[40%] text-center block mb-[34px]">
+            <a href=""
+                class="font-semibold text-[11px] leading-[18px] text-white opacity-[40%] text-center block mb-[34px]">
                 Политика конфиденциальности<br>
                 Пользовательское соглашение
             </a>

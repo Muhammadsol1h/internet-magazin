@@ -18,7 +18,7 @@
         <div class="mx-auto py-[33px] px-5 max-w-[1402px] flex items-center justify-center sm:justify-between">
             <div class=" items-center sm:gap-5 gap-0 flex">
                 <button class="border border-none bg-none flex sm:hidden px-5" id="menu">
-                    <img src="./image/index/header/menu.svg" class="flex" alt="">
+                    <img src="./image/index/header/menu.svg" class="flex" id="hamburger-menu" alt="">
                 </button>
                 <a href="" class="sm:hidden flex hover:scale-[1.2] pl-5 pr-7" style="transition: .3s;"><img
                         src="./image/index/header/search.svg" alt="" class="flex"></a>
@@ -26,9 +26,31 @@
                     style="transition: .3s;">
                     <img src="./image/index/header/logo.svg" alt="" class="flex">
                 </a>
-                <button class="border border-none bg-none hidden sm:flex xl:hidden " id="menu">
+                <button class="border border-none bg-none hidden sm:flex xl:hidden " id="">
                     <img src="./image/index/header/menu.svg" class="flex" alt="">
                 </button>
+            </div>
+
+            <div class="bg-black fixed w-full top-0 -left-full" id="responsive-menu">
+                <button class="bg-none border-none pt-[14px] pl-[22px] mb-[36px]" id="close__menu">
+                    <img src="./image/index/header/close.svg" alt="">
+                </button>
+                <ul class="pl-[44px] pb-[100px]">
+                    <li class="mb-[48px]"><a href="./Entrance.html"
+                            class="font-bold text-sm leading-4 text-white ">Одежда</a></li>
+                    <li class="mb-[48px]"><a href="./Change.html"
+                            class="font-bold text-sm leading-4 text-white ">Обувь</a></li>
+                    <li class="mb-[48px]"><a href="./order_History.html"
+                            class="font-bold text-sm leading-4 text-white ">Аксессуары</a></li>
+                    <li class="mb-[48px]"><a href="./my-addresses.html"
+                            class="font-bold text-sm leading-4 text-white ">Бренды</a></li>
+                    <li class="mb-[48px]"><a href="./dashboard.html"
+                            class="font-bold text-sm leading-4 text-white ">Расчет
+                            стоимости</a></li>
+                    <li class="mb-[48px]"><a href="./product_card.html"
+                            class="font-bold text-sm leading-4 text-white ">Информация </a>
+                    </li>
+                </ul>
             </div>
             <ul class="hidden xl:flex sm:gap-12 gap-5">
                 <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a href="./Entrance.html"
@@ -37,16 +59,17 @@
                 <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a href="./Change.html"
                         class="font-semibold text-white text-sm leading-4 ">Обувь</a><img
                         src="./image/index/header/button.svg" alt="" class="flex"></li>
-                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a href="./dashboard.html"
-                        class="font-semibold text-white text-sm leading-4 ">Аксессуары</a><img
+                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a
+                        href="./dashboard.html" class="font-semibold text-white text-sm leading-4 ">Аксессуары</a><img
                         src="./image/index/header/button.svg" alt="" class="flex"></li>
-                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a href="./order_History.html"
-                        class="font-semibold text-white text-sm leading-4 ">Бренды</a><img
+                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a
+                        href="./order_History.html" class="font-semibold text-white text-sm leading-4 ">Бренды</a><img
                         src="./image/index/header/button.svg" alt="" class="flex"></li>
                 <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a href="./wishlist.html"
                         class="font-semibold text-white text-sm leading-4 ">Расчет
                         стоимости</a><img src="./image/index/header/button.svg" alt="" class="flex"></li>
-                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a href="./my_addresses.html"
+                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a
+                        href="./my_addresses.html"
                         class="font-semibold text-white text-sm leading-4 ">Информация</a><img
                         src="./image/index/header/button.svg" alt="" class="flex"></li>
             </ul>
@@ -83,8 +106,10 @@
     <section class="mb-[80px]">
         <div class="max-w-[1400px] mx-auto px-5">
             <ul class="flex gap-[15px] items-center mb-[46px]">
-                <li><a href="./index.html" class="font-normal text-[13px] leading-5 text-[#8C8F96] gap-[15px]">Главная / </a></li>
-                <li><a href="./Entrance.html" class="font-normal text-[13px] leading-5 text-[#121214]">Личный кабинет</a></li>
+                <li><a href="./index.html" class="font-normal text-[13px] leading-5 text-[#8C8F96] gap-[15px]">Главная /
+                    </a></li>
+                <li><a href="./Entrance.html" class="font-normal text-[13px] leading-5 text-[#121214]">Личный
+                        кабинет</a></li>
             </ul>
             <h1
                 class="sm:font-black font-semibold text-[31px] leading-[42px] text-[#121214] sm:mb-[46px] mb-[30px] sm:text-left text-center">
@@ -94,29 +119,29 @@
                     <div class="border border-[#E9EAEE] rounded-[5px] mb-[30px] sm:mb-0">
                         <div class="sm:px-[37px] pl-5 sm:pl-[37px] pb-[22px] pt-[28px]">
                             <ul class="">
-                                <li class="mb-5"><a href=""
-                                        class="items-center flex gap-5 font-semibold text-[15px] leading-[42px] text-[#303030] "><img
+                                <li class="mb-5"><a id="textbtn" href=""
+                                        class="items-center flex gap-5 font-semibold text-[15px] leading-[42px] textactive "><img
                                             src="./image/change/acaut.svg" alt="">Мой аккаунт</a></li>
-                                <li class="mb-5"><a href=""
-                                        class="items-center flex gap-5 font-semibold text-[15px] leading-[42px] text-[#303030] "><img
+                                <li class="mb-5"><a id="textbtn" href=""
+                                        class="items-center flex gap-5 font-semibold text-[15px] leading-[42px] text-[#303030] opacity-[80%] "><img
                                             src="./image/change/accout.svg" alt="">Редактировать профиль</a></li>
-                                <li class="mb-5"><a href=""
-                                        class="items-center flex gap-5 font-semibold text-[15px] leading-[42px] text-[#303030] "><img
+                                <li class="mb-5"><a id="textbtn" href=""
+                                        class="items-center flex gap-5 font-semibold text-[15px] leading-[42px] text-[#303030] opacity-[80%]"><img
                                             src="./image/change/header-menu.svg" alt="">История заказов</a></li>
-                                <li class="mb-5"><a href=""
-                                        class="items-center flex gap-5 font-semibold text-[15px] leading-[42px] text-[#121214] "><img
+                                <li class="mb-5"><a id="textbtn" href=""
+                                        class="items-center flex gap-5 font-semibold text-[15px] leading-[42px] text-[#303030] opacity-[80%] "><img
                                             src="./image/change/header-menu.svg" alt="">Мои заказы</a></li>
-                                <li class="mb-5"><a href=""
-                                        class="items-center flex gap-5 font-semibold text-[15px] leading-[42px] text-[#303030] "><img
+                                <li class="mb-5"><a id="textbtn" href=""
+                                        class="items-center flex gap-5 font-semibold text-[15px] leading-[42px] text-[#303030] opacity-[80%]"><img
                                             src="./image/change/adres.svg" alt="">Адреса</a></li>
-                                <li class="mb-5"><a href=""
-                                        class="items-center flex gap-5 font-semibold text-[15px] leading-[42px] text-[#303030] "><img
+                                <li class="mb-5"><a id="textbtn" href=""
+                                        class="items-center flex gap-5 font-semibold text-[15px] leading-[42px] text-[#303030] opacity-[80%]"><img
                                             src="./image/change/adreses.svg" alt="">Редактировать адреса</a></li>
-                                <li class="mb-5"><a href=""
-                                        class="items-center flex gap-5 font-semibold text-[15px] leading-[42px] text-[#303030] "><img
+                                <li class="mb-5"><a id="textbtn" href=""
+                                        class="items-center flex gap-5 font-semibold text-[15px] leading-[42px] text-[#303030] opacity-[80%]"><img
                                             src="./image/change/parol.svg" alt="">Пароль</a></li>
-                                <li class="mb-5"><a href=""
-                                        class="items-center flex gap-5 font-semibold text-[15px] leading-[42px] text-[#303030] "><img
+                                <li class="mb-5"><a id="textbtn" href=""
+                                        class="items-center flex gap-5 font-semibold text-[15px] leading-[42px] text-[#303030] opacity-[80%]"><img
                                             src="./image/change/voyt.svg" alt="">Выход</a></li>
                             </ul>
                         </div>
@@ -154,7 +179,8 @@
                             </div>
                         </div>
                     </div>
-                    <button class="py-[23px] px-[50px] font-extrabold leading-5 text-xs sm:justify-normal mx-auto justify-center flex text-center items-center bg-[#121214] border-none rounded-[5px] text-white">
+                    <button
+                        class="py-[23px] px-[50px] font-extrabold leading-5 text-xs sm:justify-normal mx-auto justify-center flex text-center items-center bg-[#121214] border-none rounded-[5px] text-white">
                         Сохранить
                     </button>
                 </div>
@@ -196,9 +222,11 @@
                             class="font-normal leading-[28px] text-base text-[#DCDCE0] opacity-[40%]">Контакты</a></li>
                     <li class="mb-[9px]"><a href="./editing_profile.html"
                             class="font-normal leading-[28px] text-base text-[#DCDCE0] opacity-[40%]">Доставка</a></li>
-                    <li class=""><a href="./Password_two.html" class="font-normal text-base leading-[28px] text-[#DCDCE0] opacity-[40%]">
+                    <li class=""><a href="./Password_two.html"
+                            class="font-normal text-base leading-[28px] text-[#DCDCE0] opacity-[40%]">
                             Оплата</a></li>
-                    <li class=""><a href="./product_card.html" class="font-normal text-base leading-[28px] text-[#DCDCE0] opacity-[40%]">
+                    <li class=""><a href="./product_card.html"
+                            class="font-normal text-base leading-[28px] text-[#DCDCE0] opacity-[40%]">
                             FAQ</a></li>
                 </ul>
                 <img src="./image/index/footer/readycode_logo_3 1.svg" class="flex" alt="">
@@ -298,7 +326,8 @@
             <p class="font-normal text-xs leading-[18px] mb-[19px] text-center pt-[15px] text-white opacity-[40%]">
                 Подписываясь на рассылку вы соглашатесь с <br> обработкой персональных данных
             </p>
-            <a href="" class="font-semibold text-[11px] leading-[18px] text-white opacity-[40%] text-center block mb-[34px]">
+            <a href=""
+                class="font-semibold text-[11px] leading-[18px] text-white opacity-[40%] text-center block mb-[34px]">
                 Политика конфиденциальности<br>
                 Пользовательское соглашение
             </a>
@@ -321,8 +350,8 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./JS/app.js"></script>
-
+    <!-- <script src="./JS/app.js"></script> -->
+    <script src="./JS/faq.js"></script>
 
     <!-- =============================================================================================== -->
     <!-- =============================================================================================== -->
