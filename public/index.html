@@ -21,7 +21,7 @@
                 <button class="border border-none bg-none flex sm:hidden px-0" id="menu">
                     <img src="./image/index/header/menu.svg" class="flex" id="hamburger-menu" alt="">
                 </button>
-                <a href="" class="sm:hidden flex hover:scale-[1.2] pl-5 pr-7" style="transition: .3s;"><img
+                <a href="" class="sm:hidden flex  pl-5 pr-7" style="transition: .3s;"><img
                         src="./image/index/header/search.svg" alt="" class="flex"></a>
                 <a href="./index.html" class="flex hover:scale-[1.1] w-[83px] h-[34px] xl:w-[68px] xl:h-[27px]"
                     style="transition: .3s;">
@@ -37,52 +37,87 @@
                     <img src="./image/index/header/close.svg" alt="">
                 </button>
                 <ul class="pl-[44px] pb-[100px]">
-                    <li class="mb-[48px]"><a href="./Entrance.html" class="font-bold text-sm leading-4 text-white ">Одежда</a></li>
-                    <li class="mb-[48px]"><a href="./Change.html" class="font-bold text-sm leading-4 text-white ">Обувь</a></li>
-                    <li class="mb-[48px]"><a href="./order_History.html" class="font-bold text-sm leading-4 text-white ">Аксессуары</a></li>
-                    <li class="mb-[48px]"><a href="./my-addresses.html" class="font-bold text-sm leading-4 text-white ">Бренды</a></li>
-                    <li class="mb-[48px]"><a href="./dashboard.html" class="font-bold text-sm leading-4 text-white ">Расчет
+                    <li class="mb-[48px]"><a href="#" class="font-bold text-sm leading-4 text-white">Одежда</a>
+                    </li>
+                    <li class="mb-[48px]"><a href="./Change.html" class="font-bold text-sm leading-4 text-white"
+                            id="btn">Обувь</a></li>
+                    <li class="mb-[48px]"><a href="./order_History.html" class="font-bold text-sm leading-4 text-white"
+                            id="btn">Аксессуары</a></li>
+                    <li class="mb-[48px]"><a href="./my-addresses.html" class="font-bold text-sm leading-4 text-white"
+                            id="btn">Бренды</a></li>
+                    <li class="mb-[48px]"><a href="./dashboard.html" class="font-bold text-sm leading-4 text-white"
+                            id="btn">Расчет
                             стоимости</a></li>
-                    <li class="mb-[48px]"><a href="./product_card.html" class="font-bold text-sm leading-4 text-white ">Информация </a>
+                    <li class="mb-[48px]"><a href="./product_card.html" class="font-bold text-sm leading-4 text-white"
+                            id="btn">Информация </a>
                     </li>
                 </ul>
             </div>
             <ul class="hidden xl:flex sm:gap-12 gap-5">
-                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a href="./Entrance.html"
-                        class="font-semibold text-white text-sm leading-4 ">Одежда</a><img
-                        src="./image/index/header/button.svg" alt="" class="flex"></li>
-                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a href="./Change.html"
+                <li class="items-center flex gap-2 " style="transition: .3s;"><button href="#"
+                        class="font-semibold text-white text-sm leading-4 " id="btn">Одежда</button>
+                    <ul>
+                        <div class="DropDownPerent hidden">
+                            <li>
+                                <a href="" class="font-semibold text-base leading-[18px]">
+                                    Наш блог
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="font-semibold text-base leading-[18px]">
+                                    Наши контакты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="font-semibold text-base leading-[18px]">
+                                    Доставка
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="font-semibold text-base leading-[18px]">
+                                    Оплата
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="font-semibold text-base leading-[18px]">
+                                    FAQ
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                    <img src="./image/index/header/button.svg" alt="" class="flex">
+                </li>
+                <li class="items-center flex gap-2 " style="transition: .3s;"><a href="./Change.html"
                         class="font-semibold text-white text-sm leading-4 ">Обувь</a><img
                         src="./image/index/header/button.svg" alt="" class="flex"></li>
-                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a
-                        href="./dashboard.html" class="font-semibold text-white text-sm leading-4 ">Аксессуары</a><img
+                <li class="items-center flex gap-2 " style="transition: .3s;"><a href="./dashboard.html"
+                        class="font-semibold text-white text-sm leading-4 ">Аксессуары</a><img
                         src="./image/index/header/button.svg" alt="" class="flex"></li>
-                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a
-                        href="./order_History.html" class="font-semibold text-white text-sm leading-4 ">Бренды</a><img
+                <li class="items-center flex gap-2 " style="transition: .3s;"><a href="./order_History.html"
+                        class="font-semibold text-white text-sm leading-4 ">Бренды</a><img
                         src="./image/index/header/button.svg" alt="" class="flex"></li>
-                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a href="./wishlist.html"
+                <li class="items-center flex gap-2 " style="transition: .3s;"><a href="./wishlist.html"
                         class="font-semibold text-white text-sm leading-4 ">Расчет
                         стоимости</a><img src="./image/index/header/button.svg" alt="" class="flex"></li>
-                <li class="items-center flex gap-2 hover:scale-[1.2]" style="transition: .3s;"><a
-                        href="./my_addresses.html"
+                <li class="items-center flex gap-2 " style="transition: .3s;"><a href="./my_addresses.html"
                         class="font-semibold text-white text-sm leading-4 ">Информация</a><img
                         src="./image/index/header/button.svg" alt="" class="flex"></li>
             </ul>
             <div class="flex items-center xl:gap-[7px]">
                 <ul class="flex items-center xl:gap-8 gap-7">
-                    <li class=""><a href="" class="sm:flex hidden hover:scale-[1.2]" style="transition: .3s;"><img
+                    <li class=""><a href="" class="sm:flex hidden " style="transition: .3s;"><img
                                 src="./image/index/header/search.svg" alt="" class="flex"></a></li>
-                    <li class=""><a href="" class="flex hover:scale-[1.2]" style="transition: .3s;"><img
+                    <li class=""><a href="" class="flex " style="transition: .3s;"><img
                                 src="./image/index/header/start.svg" alt="" class="flex"></a></li>
-                    <li class=""><a href="" class="flex hover:scale-[1.2]" style="transition: .3s;"><img
+                    <li class=""><a href="" class="flex " style="transition: .3s;"><img
                                 src="./image/index/header/contact.svg" alt="" class="flex"></a></li>
-                    <li class=""><a href="" class="flex hover:scale-[1.2]" style="transition: .3s;"><img
+                    <li class=""><a href="" class="flex " style="transition: .3s;"><img
                                 src="./image/index/header/shoping.svg" alt="" class="flex"></a></li>
                 </ul>
-                <p class="font-bold text-[13px] text-[#8C8F96] leading-[10px] hover:scale-[1.2] hidden sm:flex"
-                    style="transition: .3s;">11 899 ₽</p>
+                <p class="font-bold text-[13px] text-[#8C8F96] leading-[10px]  hidden sm:flex" style="transition: .3s;">
+                    11 899 ₽</p>
                 <button
-                    class="font-bold text-xs leading-[53px] text-white bg-[#49D0FF] border border-none rounded-full w-6 h-6 text-center items-center hidden justify-center hover:scale-[1.2] sm:flex"
+                    class="font-bold text-xs leading-[53px] text-white bg-[#49D0FF] border border-none rounded-full w-6 h-6 text-center items-center hidden justify-center  sm:flex"
                     style="transition: .3s;">7</button>
             </div>
         </div>
@@ -97,7 +132,7 @@
             style="background: url(/public/image/index/hero/banner.png);background-position: center; background-repeat: no-repeat; background-size: cover;">
             <div class="ml-auto pt-[98px] pb-[46px]">
                 <h1
-                    class="font-black xl:text-[51px] sm:text-lg text-[34px] xl:leading-[53px] leading-[43px] text-[#171819] mb-[19px] xl:max-w-[200px] max-w-[100px]">
+                    class="font-black xl:text-[51px] sm:text-lg text-[34px] xl:leading-[63px] leading-[63px] text-[#171819] mb-[19px] xl:max-w-[200px] max-w-[100px]">
                     Широкий
                     ассортимент Одежды</h1>
                 <p
@@ -447,13 +482,22 @@
                                 статья о том, как установить <Br> приложение Poizon
                             </p>
                         </div>
-                        <div class="flex gap-5 items-center justify-center">
+                        <div class="flex gap-5 mx-auto justify-center sm:mb-[41px] mb-[23px] items-center">
                             <span
                                 class="border border-[#FFFFFF75] rounded-full text-white font-bold text-2xl text-center justify-center items-center py-[22px] px-[32px]">2</span>
                             <p class="font-semibold text-base leading-[22px] text-white max-w-[258px]">Напишите нам в
                                 Telegram<br>
-                                или WhatsApp какую вещь<br> хотите купить</p>
+                                или WhatsApp какую вещье<br> хотите купить
+                            </p>
                         </div>
+                        <!-- <div class="flex gap-5 mx-auto justify-center sm:mb-0 mb-[23px] items-center">
+                            <span
+                                class="border border-[#FFFFFF75] rounded-full text-white font-bold text-2xl text-center justify-center items-center py-[22px] px-[32px]">2</span>
+                            <p class="font-semibold text-base leading-[22px] text-white max-w-[258px]">Напишите нам в
+                                Telegram<br>
+                                или WhatsApp какую вещь<br> хотите купить
+                            </p>
+                        </div> -->
                     </div>
                     <button
                         class="flex items-center gap-[21px] font-extrabold text-xs leading-5 text-white border rounded-[5px] border-none bg-[#121214] py-[23px] px-[27px] sm:mb-0 mb-[36px] sm:mx-0 mx-auto">Рассчитать
@@ -532,7 +576,7 @@
     <!-- =============================================================================================== -->
     <!-- =============================================================================================== -->
 
-`   `                
+    ` `
     <section class="mb-[118px]">
         <div class="mx-auto px-5 max-w-[1400px] ">
             <div class="flex justify-between items-center mb-9">
@@ -541,7 +585,7 @@
                     class="font-extrabold text-sm leading-6 flex items-center gap-[10px]">больше статей <img
                         src="./image/index/hero/btn__right.svg" class="flex" alt=""></a>
             </div>
-            <div class="swiper mySwiper"> 
+            <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="flex">
@@ -629,8 +673,8 @@
                     </div>
                 </div>
             </div>
-        </div>      
-    </section>  
+        </div>
+    </section>
 
 
     <!-- =============================================================================================== -->
@@ -789,9 +833,9 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./JS/app.js"></script>
+    <!-- <script src="./JS/app.js"></script> -->
     <script src="./JS/swiper.js"></script>
-
+    <script src="./JS/dropdavon.js"></script>
     <!-- =============================================================================================== -->
     <!-- =============================================================================================== -->
 </body>
